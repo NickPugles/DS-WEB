@@ -4,5 +4,5 @@
 - O significado geral do comando git push(empurrar) -u(sincronizar) origin main;
 - Que o Branch se trata de uma lina de pensamento, que geralmente é dividida através de áreas/partes de um mesmo projeto;
 - A utilização das tags <a>, <tr>, <td>, <th>
-- Adicionar um link em uma página e redirecionar para outro site;
+- Adicionar um link em uma página e redirecionar para outro site.
 -->
