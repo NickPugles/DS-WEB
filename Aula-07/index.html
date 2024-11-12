@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatos em HTML</title>
+
+    <style>
+        *{
+            margin: 0%;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        body{
+          background-image: url('imagem.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-repeat: repeat-x;
+          background-attachment: fixed;
+        }
+        .container{
+            height: 600px;
+            width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid white;
+
+            background-image: url('paisagem.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        .music{
+            width: 100%;
+            height: auto;
+            background-position: top center;
+            text-align: center;
+        }
+        .menu-top{
+            width: 100%;
+            padding: 20px;
+            padding-left: 200px;
+            background-color: rgb(85, 175, 169);
+            position: sticky;
+            top: 0;
+            display: flex;
+        }
+        .titulo-home{
+            margin-top: 6px;
+            margin-left: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--background-image é usado para acrescentar imagem de fundo e URL é usado para direcionar a imagem-->
+    <!--background-size vai modelar e cobrir a imagem, fazendo que quando ocorrer a alteração não afete a qualidade da imagem-->
+    <!--auto: ele é padrão e mantém o tamanho original da imagem-->
+    <!--repeat-x: Repete a imagem apenas horizontalmente.-->
+    <!--width = largura. height = altura-->
+    <!--o background-size: COVER vai distorcer a imagem para ela caber dentro do quadrado -->
+    <!--o background-position posiciona a imagem, coloca do lado que for programado, como direita, esquerda etc;-->
+    <!--background-attachment é responsável pela movimentação da imagem, se ela se movimenta de acordo com o rolamento da página, se ela fica fixo etc-->
+    
+    <div class="menu-top">
+        <img src="home_icon.svg">
+        <h1 class="titulo-home">Página Home</h1>
+    </div>
+
+    <div class="container">
+        <img src="instagram_icon.svg"> <!--src: é a fonte da imagem (localização)-->
+    </div>
+    <div class="music">
+        <video src="Far Away - Nickelback (Lyrics).mp4" controls></video>
+    </div>
+</body>
+</html>
