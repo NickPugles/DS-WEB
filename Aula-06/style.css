@@ -1,0 +1,44 @@
+/*---A caracter *{} é considerada coringa, pois tudo que for colocado dentro da chave vai ser aplicado no texto inteiro, exemplo, tamanho, distância da margem etc---*/
+
+p{ 
+    font-size: 40px;
+    font-family:"Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+.indent{
+    text-indent: 50px;
+}
+
+.shadow{
+    text-shadow: 1px 1px #ff0000; /*---O primeiro px joga para a direita e o segundo px joga para baixo---*/
+}
+
+.shadow-blur{ /*---Blur=Borrão---*/
+    text-shadow: 5px 5px 7px #00FF00;
+}
+
+.overline{
+    text-decoration: overline; /*---risco em cima do texto---*/
+}
+.line-through{
+    text-decoration: line-through; /*---um risco no meio do texto---*/
+}
+.underline{
+    text-decoration: underline; /*---um risco em baixo do texto---*/
+}
+.overline-underline{
+    text-decoration: overline underline line-through; /*---uma linha em cima e em baixo do texto---*/
+}
