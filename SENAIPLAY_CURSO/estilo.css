@@ -1,0 +1,49 @@
+label, input, select, textarea{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form{
+   width: 550px;
+   margin: auto;
+   background: #eee;
+   padding: 40px;
+}
+label{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.emlinha{
+    display: inline;
+    width: 4%;
+}
+.medidas{
+    display: inline;
+    width: 35%;
+}
+input,select,textarea{
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: solid 1px #ffb300;
+}
+#enviar{
+    width: 100%;
+    border: 2px solid #ffb300;
+    color: #ffb300;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 16px;
+    letter-spacing: 0.04;
+}
+#enviar:hover{
+    background-color: #ffb300;
+    color: #fff;
+    transition: all linear 0.3s;
+}

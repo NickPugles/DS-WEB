@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Academia</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <form action="m" method="post"><!--form para criar um formulário  -->
+        <!--<form action> direciona a ação para a página. Responsável por enviar para uma página-->
+        <!--Method é o método de envio, ex: method=”post” (via post)-->
+
+        <label>Nome: </label><!--Label: onde esta escrito o que é solicitado -->
+        <input type="text" name="nome" id="nome" required="required" autofocus> <br><!--Input type: é o tipo de caractere que irá entrar>campo de entrada do tipo... -->
+        <label>Email: </label>
+        <input type="email" name="email" id="email" required placeholder="Exemplo: email@gmail.com.br"><br><!--type =”e-mail” cria uma validação simples que deve conter pelo menos um @-->
+        <label>Telefone: </label>
+        <input type="number" name="telefone" id="tel" required><br><!--Required torna o preenchimento do campo obrigatório -->
+        <label for="data de nascimento">Data de Nascimento: </label>
+        <input type="date" name="dt.nasc" id="data" required><br><!--dt.nasc: acrescenta calendário-->
+        
+        <label for="peso" class="medidas">Peso: </label><!--a medidas foi a CLASS criada para modificação-->
+        <input type="number" name="peso" id="peso" class="medidas" required step="0.01"><!--Step serve para acrescentar ou diminuir o valor -->
+        <label for="altura" class="medidas">Altura: </label>
+        <input type="number" name="altura" id="altura" class="medidas" required step="0.01"><br>
+        <label for="foto">Foto: </label>
+        <input type="file" name="foto" id="foto" required><br><br>
+
+        <label>Plano: </label><!--Radio: só pode ser escolhida uma opção (formato redondo). Obs: o name no INPUT é essencial -->
+        <input class="emlinha" type="radio" name="plano" id="sem">
+        <label class="emlinha" for="sem">semanal</label>
+        <input class="emlinha" type="radio" name="plano" id="men"><!--o name precisa ter o mesmo valor para que seja possível selecionar somente uma opção-->
+        <label class="emlinha" for="men">mensal</label>
+        <input class="emlinha" type="radio" name="plano" id="anual"><!--Ex: <input type=”radio” name”plano”> -->
+        <label class="emlinha" for="anual">anual</label><br><br>
+
+        <label>Dias da Semana: </label> <!--Checkbox: pode marcar mais de uma opção ou nenhuma (formato quadrado) -->
+        <input class="emlinha" type="checkbox" name="segunda" id="seg"><!--emlinha foi a CLASS criada-->
+        <label class="emlinha" for="seg">Segunda-feira</label>
+        <input class="emlinha" type="checkbox" name="terça" id="ter"><!--O name deve ser diferente para que possa ser selecionado mais de uma opção-->
+        <label class="emlinha" for="ter">Terça-feira</label>
+        <input class="emlinha" type="checkbox" name="quarta" id="qua">
+        <label class="emlinha" for="qua">Quarta-feira</label>
+        <input class="emlinha" type="checkbox" name="quinta" id="qui">
+        <label class="emlinha" for="qui">Quinta-feira</label>
+        <input class="emlinha" type="checkbox" name="sexta" id="sex">
+        <label class="emlinha" for="sex">Sexta-feira</label><br><br>
+
+        <label>Objetivo principal do Treino: </label>
+        <select name="objetivo" required><!--Select é um campo onde pode ser selecionado uma ou mais opções -->
+            <option value="">Selecionar...</option>
+            <option value="massa-muscular">Ganho de Massa Muscular</option>
+            <option value="cardiovascular">Melhoria da Saúde Cardiovascular </option>
+            <option value="flexibilidade">Aumento da Flexibilidade</option>
+            <option value="mental">Melhoria da saúfde mental</option>
+            <option value="outro">Outros</option>
+        </select>
+        <br>
+        <label>Informações adicionais: </label>
+        <!--Rows especifica o número de linhas que caberá dentro do campo/espaço -->
+        <textarea name="informações" rows="8" cols="54" maxlength="5" required placeholder="Digite um breve texto com informações adicionais que julgar importante"></textarea>
+        <!--Textearea cria uma área de texto muiti linha. Ele é usado quando você precisa permitir que o usuário insira um texto mais longo do que seria possível
+             em um campo de entrada de texto simples. -->
+        <br>
+        <input type="submit" name="enviar" value="ENVIAR"><!--Input submit onde será o botão enviar. Botão submit serve para enviar para ser processado no 
+            back-end  -->
+        
+    </form>
+</body>
+</html>
