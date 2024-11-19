@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        /*Exemplo de Hover*/
+        button:hover{  /*acrescenta cor ao botão quando precionado*/
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*Exemplo de Active*/
+        button:active { /*aumenta o tamanho do botão ao ser precionado*/
+            transform: scale(0.95);
+        }
+        /*Exemplo de Focus*/
+        .input-focus:focus{ /*quando aperta o botão altera a cor de fundo, deve-se escrever dentro do espaço*/
+            color: black; /*corda letra/escrita*/
+            background: lightseagreen; /*cor de fundo*/
+        }
+
+        /*EXEMPLO DE PSEUDOCLASSES DE FORMULÁRIOS*/
+
+        /*Exemplo de Checked*/
+        .radio-checked:checked{
+            transform: scale(1.5); /*quando clica no botão ele fica maior*/
+        }
+        .checkedbox-checked:checked{
+            transform: scale(1.5);
+        }
+
+        /*EXEMPLO DE PSEUDOCLASSES DE LINKS*/
+
+        /*Exemplo de Pseudoclasses para Links*/
+        a:link {
+            color: rgb(0, 30, 128); /*cor do link*/
+        }
+        a:visited {
+            color: rgb(122, 0, 128); /*cor do link após ser clicado*/
+        }
+        /*Exemplo de  Pseudoclasses EMPTY*/
+        div:empty{ /*seleciona a div que estiver vazia para que nela não ocorra a alteração*/
+            display: none; 
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Exemplo de Hover</h3>
+        <button class="button-hover">Clique aqui!</button>
+    </div><br>
+        <!---->
+    <div>
+        <h3>Exemplo de Active</h3>
+        <button class="button-active">Clique aqui!</button>
+    </div><br>
+        <!---->
+    <div>
+        <h3>Exemplo de Focus</h3>
+        <input type="text" class="input-focus" placeholder="Clique aqui">
+    </div><br>
+        <!---->
+    <div>
+        <h3>Exemplo de Checked</h3>
+        <label>Radio button</label>
+        <input type="radio" class="radio-checked"><input type="radio" class="radio-checked"> <!--não tem como desmarcar-->
+        <label>checkbox</label>
+        <input type="checkbox" class="checkbox-checked">
+    </div><br>
+
+    <div>
+        <h3>Exemplo de Pseudoclasses para Links</h3>
+        <a href="#">link 1</a>
+        <a href="#">link 2</a>
+        <a href="#">link 3</a>
+        <a href="#">link 4</a>
+        <a href="#">link 5</a>
+        <a href="#">link 6</a>
+        <a href="#">link 7</a>
+        <a href="#">link 8</a>
+        <a href="#">link 9</a>
+        <a href="#">link 10</a>
+    </div><br>
+
+    <div class="div-vazia"></div>
+</body>
+</html>
