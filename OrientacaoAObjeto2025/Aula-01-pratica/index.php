@@ -9,7 +9,7 @@ class Veiculo{ //Classe
 
     //Método
     public function ligar(){ //ação
-        return "O". $this->modelo. ""
+        return "O" .$this ->modelo. "";
     }
 }
 
@@ -24,7 +24,7 @@ $polo->renevem ="123123123";
 class Pessoa{
     public $nome; //atributo
     public function falar(){ //metodo
-        return "O meu nome é". $this->nome
+        return "O meu nome é". $this->nome;
     }
 }
 ?>

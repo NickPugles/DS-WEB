@@ -1,36 +1,37 @@
-// Questão 1
-function alertaDeClique(){
-    var nome = document.getElementById("nome").value
-    document.getElementById("nome").innerHTML = "Nome: " + nome;
+//Exercício 1
+function boasVindas() {
+    const nome = document.getElementById('nome').value;
+    const mensagem = `Bem-vindo, ${nome}!`;
+    document.getElementById('mensagem').innerText = mensagem;
 }
 
-//function CliqueAqui() {
-    //var name = document.getElementById('name').value;
-//}
-
-//Questão2
-function alertaDeClique(){
-    var numero1 = document.getElementById("numero1").value;
-    var numero2 = document.getElementById("numero2").value;
+//Exercício 2
+function verificaParImpar() {
+    const numero = parseInt(document.getElementById('numero').value);
+    const resultado = (numero % 2 === 0) ? 'O número é par.' : 'O número é ímpar.';
+    document.getElementById('resultadoParImpar').innerText = resultado;
 }
 
-
-//Questão 3
- function convertendoTexto() {
-    
+//Exercício 3
+function convertendoTexto() {
     var texto = document.getElementById("texto").value;
-    
     var textoMaiusculo = texto.toUpperCase();
-    
-    document.getElementById("resultado").innerText = "Resultado: " + textoMaiusculo;
+    document.getElementById("resul").innerText = "Resultado: " + textoMaiusculo;
 }
 
+//Exercício 4
+function aumentoPercentual() {
+    const valor = parseFloat(document.getElementById('valor').value);
+    const percentual = parseFloat(document.getElementById('percentagem').value);
+    const aumento = valor + (valor * (percentual / 100));
+    document.getElementById('resultadoPercentual').innerText = `Valor após o aumento: ${aumento}`;
+}
 
-//Questão 4
+//Exercício 5
+function alterarCor() {
+    var divCor = document.getElementById('divCor');
+    divCor = divCor.style.backgroundColor="grey"
+    
+}
 
-//Questão 5
-
-//function alertaDeClique(){
-    //var nome = document.getElementById("nome").value
-    //document.getElementById("nome").innerHTML = "Nome: " + nome;
-//}
+document.getElementById('MudarCor').addEventListener('click', alterarCor);

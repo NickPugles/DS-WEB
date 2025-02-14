@@ -9,9 +9,11 @@ public $saldo;
 
 //métodos
 public function saque(){
+    return "O valor do saque foi " .$this->saque;
 
 }
 public function deposito(){
+    return "O valor do deposito foi " .$this->deposito;
 
 }
 }
@@ -30,7 +32,7 @@ echo $contaNick ->deposito();
 $contaAtha = new ContaBancaria();
 $contaAtha->numero ="175.207.534-68";
 $contaAtha->nome = "Agatha";
-$contaAtha->saldo ="1200"
+$contaAtha->saldo ="1200";
 
 $contaAtha->saque = "50";
 
