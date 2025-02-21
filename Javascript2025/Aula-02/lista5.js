@@ -16,38 +16,23 @@ function sair(){
 }
 
 //atividade 2
-var m = document.getElementById('texto');
-
-m.addEventListener('keypress', tecla);
-m.addEventListener('input', campo);
-m.addEventListener('input', function() {
-  var texto = textarea.value;
-  var comprimentoAtual = texto.length;
-  contador.innerHTML = comprimentoAtual + " / 100";
-});
-
-
-
-
-
-
-
-/*var m = window.document.getElementById('texto');
-m.addEventListener('keypress', tecla);
-m.addEventListener('input', campo);
-function tecla(){
-
-    m.innerText='texto'
+function captura() {
+    document.getElementById("teclas").innerText = document.getElementById("texto").value;
 }
-function campo(){
-    m.innerText='texto'
-}*/
 
 //atividade 3
-var b = window.document.getElementById('botao');
-b.addEventListener('click', vezes);
-function vezes(){
-   b.Node.textContent
+let contador = 0;
+function cliques() {
+
+    contador++;
+    document.getElementById("contador").innerHTML = contador;
 }
 
+
 //atividade 4
+function bv(){
+    document.getElementById("texto1").innerHTML = "Seja bem-vindo!";
+}
+window.onload = function() {
+    bv();
+}

@@ -23,20 +23,24 @@
 </div>
 <br><br>
     <!--2 atividade-->
-<p>Capturando teclas pressionadas</p>
-<div id="texto">
-    <input type="text" id="texto" placeholder="Preencha o campo">
-    <p id="textoEscrito"></p>
-</div>
+<p>Capturando teclas pressionadas</p> 
+<input id="texto" type="text" placeholder="Digite aqui!" oninput="captura()"><br>
+    <div>
+        <p id="teclas"></p>
+    </div>
 
-
+<br>
     <!--3 atividade-->
 <p>Contador de cliques</p>
-<div id="botao">
-    <button onclick>Clique aqui!</button>
-</div>
+<p>O botão foi clicado <span id="contador">0</span> vezes.</p> <!--O span deve juntar e estilizar o texto-->
+<button id="botao" onclick="cliques()">Clique aqui</button>
 
     <!--4 atividade-->
+    <div id="bv">
+        <p id="texto1"></p>
+    </div>
+    
+
 </body>
 <script src="lista5.js"></script>
 </html>
