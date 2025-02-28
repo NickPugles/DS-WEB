@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de cartões</title>
+</head>
+<style>
+    .cartao{
+        width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #5c8096;
+        box-shadow: 0 0 10px rgb(37, 9, 221);
+    }
+    .cartoesLista{
+        width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+    }
+</style>
+<body>
+    <center>
+        <div class="cartao">
+            <form id="geradorCartao">
+                <h1>Lista de Cartões</h1>
+                <label>Nome: </label>
+                <input type="text" id="cartaoInput" placeholder="Digite um cartão">
+              
+                <label>Descrição: </label>
+                <input type="text" id="descricaoInput" placeholder="Digite uma descrição">
+                <br><br>
+                <button type="submit">Adicionar</button>
+                
+            </form>
+        </div>
+
+        <h2>Cartões Adicionadas:</h2>
+        <div id="cartoesLista">
+               
+        </div>
+    </center>
+
+</body>
+<script src="desafio.js"></script>
+</html>

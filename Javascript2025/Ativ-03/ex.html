@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cartões Dinâmicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerador de Cartões Dinâmicos</h1>
+
+    <!-- Formulário para adicionar nome e descrição -->
+    <form id="formCartao">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" placeholder="Digite uma descrição" required><br><br>
+
+        <button type="submit">Criar Cartão</button>
+    </form>
+
+    <div id="cartoesContainer">
+        <!-- Cartões criados dinamicamente serão inseridos aqui -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
