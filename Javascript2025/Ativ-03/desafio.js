@@ -14,7 +14,7 @@ document.getElementById("geradorCartao").addEventListener('submit', function(eve
     const cartao = document.createElement('div');
     cartao.setAttribute('class', 'cartao');
 
-    //Texto do cartão
+    //Texto do cartão - Fonte
     const cartaoNome = document.createElement('h3');
     cartaoNome.textContent = nome;
 
