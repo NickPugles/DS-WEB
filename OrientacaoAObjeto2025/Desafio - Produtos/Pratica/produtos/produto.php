@@ -86,8 +86,7 @@ if (!isset($_SESSION['login']) || !isset($_SESSION['email'])) {
                 </tr>
             ";
         }
-        //Matando os dados da sessão
-        session_unset();
+
     ?>
     </table>
     </div>

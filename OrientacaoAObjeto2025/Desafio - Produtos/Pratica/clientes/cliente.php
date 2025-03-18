@@ -77,8 +77,7 @@
                 </tr>
             ";
         }
-        //Matando os dados de erro da sessão
-        session_unset();
+  
     ?>
     </table>
     </div>
